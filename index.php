@@ -1,3 +1,7 @@
 <?php
 
-echo 'Hello world';
+require_once 'src/controllers/AppController.php';
+
+$controller = new AppController();
+
+$controller->render("login");
